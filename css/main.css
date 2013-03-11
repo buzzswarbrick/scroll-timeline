@@ -1,0 +1,13 @@
+#wrapper {
+  position: relative;
+  overflow: hidden;
+}
+#wrapper #pages-wrapper .pages {
+  float: left;
+  overflow: hidden;
+}
+#wrapper #pages-wrapper .pages .page {
+  float: left;
+  display: block;
+  position: relative;
+}
