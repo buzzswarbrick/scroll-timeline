@@ -9,8 +9,22 @@
 			var self = this;
 			$(function () {
 				self.site.init();
+				self.talk.init();
 			});
 
+		},
+
+		talk : {
+			init : function(){
+
+				var $hat = $('#hat');
+
+				$hat.click(function(e){
+
+				TweenLite.to($(this),3, {left:"800px", ease:Elastic.easeOut});	
+				
+				})
+			}
 		},
 
 
@@ -68,10 +82,12 @@
 
 				self.myScroll.refresh();
 
+				TweenMax.to($('#wrapper'), 0, {opacity:0, ease:Quad.easeOut})
+
 				window.delay(function(){
 					self.myScroll.scrollToPage(self.myScroll.currPageX,0,0)
 					self.updateTimeline()
-					TweenMax.to($('#wrapper'), 0.5, {css:{autoAlpha:1}, ease:Quad.easeOut})
+					TweenMax.to($('#wrapper'), 0.5, {opacity:1, ease:Quad.easeOut})
 				},500)
 
 			},

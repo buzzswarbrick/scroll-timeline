@@ -27,28 +27,112 @@
 
         <div class="pages" id="scroller">
                         <div class="page">
-                            <h1>Page - 1</h1>
 
+                            <div class="text-container">
+                                <h1>TweenMaximise your Animations!</h1>
+                                <h2>Remember flash? its back... in pogform</h2>
+
+                                <img src="http://1.bp.blogspot.com/_cAVqyRPWW6o/TOWVO6qSpvI/AAAAAAAAAE8/VrPB5_bISlA/s1600/alf%2Bpog.png" alt="">
+                                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJU839xgfkQmXfA7m4GhBvPGF6iLh_Kg0QVDp6xVsDFHBU3ROS" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="page">
+                            <div class="text-container">
+
+                                <h1>What is it?</h1>
+                            
+                                <ul>
+                                    <li>Incredibly smooth, incredibly powerful, relatively simple Javascript animation library</li>
+                                    <li>Based on the wonderful Greensock Tween classes</li>
+                                </ul>
+                                
+
+                            </div>
+                        </div>
+
+                        <div class="page">
+                            <div class="text-container">
+
+                            <h1>Why?</h1>
+                            
+                            <ul>
+                                <li>Cause jquery animations suck. non of this .stop(true,true).animate(.. nonsense.</li>
+                                <li>You don't even need jQuery! <i>tres hip</i></li>
+                                <li>Fast. super fast.</li>
+                                <li>Works on iOS devices</li>
+                                <li>Timelines</li>
+                                <li>Timelines</li>
+                                <li>Timelines</li>
+                                <li>Timelines</li>
+                                <li>Timelines</li>
+                                <li>Timelines</li>
+                                <li>Timelines</li>
+                            </ul>
+                            
+
+                            </div>
                         </div>
                         <div class="page">
 
-                            <h1>Page - 2</h1>
+                            <div class="text-container">
 
+
+                            <h1>Preview from the sauce!</h1>
+                            <ul>
+                                <li><a href="http://www.greensock.com/gsap-js/" target="_blank">Greensock website</a></li>
+                                <li><a href="http://www.greensock.com/js/speed.html" target="_blank">Speed Test</a></li>
+                            </ul>
+
+
+                        </div>
                         </div>
                         <div class="page">
 
-                            <h1>Page - 3</h1>
+
+                            <img src="http://www.futuredude.com/wp-content/uploads/2012/06/star-wars-a-new-hope-millenium-falcon-makes-the-jump-to-hyper-space-behind-han-solo-and-chewbacca.jpg" alt="" class="full-screen">
 
                         </div>
                         <div class="page">
+                            <div class="text-container">
+                                <h1>Implementing the code</h1>
 
-                            <h1>Page - 4</h1>
+                               <code>
+                                var $hat = $('#hat');
+                                <br/>
+                                <br/>
+                                TweenMax.<span class="highlight to">to</span>(<span class="highlight selector">$hat</span>, <span class="highlight">3</span>, {<span class="highlight css">left:"800px"</span>, <span class="highlight ease">ease:Elastic.easeOut</span>});</code>
+
+                            </div>
+                            
+                            <div class="stage">
+                                <img id="hat" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwD3YmSCaAbEysEg9Keo5QsOc0WMU5EUl0T3dM1oxFbEMEMX6" alt="">
+                            </div>
+
+
 
                         </div>
+
+
                         <div class="page">
+                            <div class="text-container">
+                                <h1>Timelines</h1>
+                                <a href="http://www.greensock.com/jump-start-js/#timelinelite-syntax" target="_blank">TimelineLite</a>
 
-                            <h1>Page - 5</h1>
+                            </div>
+                        </div>
 
+                        <div class="page">
+                            <div class="text-container">
+                                <h1>Links to checkout!</h1>
+                                <ul>
+                                    <li><a href="http://www.greensock.com/">Greensock</a></li>
+                                    <li><a href="http://johnpolacek.github.com/superscrollorama/">Superscrollorama</a></li>
+                                    <li>Signup to Greensock Newsletter</li>
+                                </ul>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -58,7 +142,8 @@
             <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
 
             <script src="js/vendor/iscroll.js"></script>
-            <script src="js/vendor/TweenMax.min.js"></script>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.0/TweenMax.min.js"></script>
+
             <script src="js/plugins.js"></script>
             <script src="js/main.js"></script>
 
